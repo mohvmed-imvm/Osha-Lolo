@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 import "./App.css";
 
 const CONFIG = {
-  callerName: "Ahmed",
+  callerName: "Lolo",
   subtitle: "incoming love call",
   password: "2711",
   photos: [
