@@ -8,12 +8,12 @@ const CONFIG = {
   subtitle: "incoming love call",
   password: "2711",
   photos: [
-    "/public/photo2.jpg",
-    "/public/photo3.jpg",
-    "/public/photo4.jpg",
-    "/public/photo5.jpg",
-    "/public/photo6.jpg",
-    "/public/photo7.jpg",
+  `${import.meta.env.BASE_URL}photo2.jpg`,
+  `${import.meta.env.BASE_URL}photo3.jpg`,
+  `${import.meta.env.BASE_URL}photo4.jpg`,
+  `${import.meta.env.BASE_URL}photo5.jpg`,
+  `${import.meta.env.BASE_URL}photo6.jpg`,
+  `${import.meta.env.BASE_URL}photo7.jpg`,
   ],
   message:
     "سنة جديدة بتبدأ في عمرك، ويارب تعقل بقا 😂🤦🏻‍♀️❣️ بدعي ربنا من كل قلبي إنها تكون مليانة فرح ونجاح وراحة بال، وإن ربنا يحقق لك كل أحلامك ويجعلني دايماً سبب في سعادتك زي ما أنت سبب في سعادتي. من يوم ما دخلت حياتي وأنا حاسة إن الدنيا كلها بتضحكلي، وجودك جنبي بيهوّن عليا أي تعب وبيديني طاقة وأمان مالهمش حدود❣️🫂 كل سنة وأنت طيب يا روح قلبي، وعقبال مليون سنة وإحنا مع بعض، إيدينا في إيد بعض، وبنكبر سوا على الحلوة والمرة. 🫂❣️ مهما اتكلم م هقدر اوصفلك معزتك او غلاوتك عندي قد اي 🥹❤️ كل سنه وانت قبل متبقي خطيبي وحبيبي انك ابويا وصحبي واخويا وكل حاجه ف الدنيا❤️ربنا يبعد عنك اي حاجه وحشه واشوفك احسن واسعد الناس  يروحي🫂❤️ وربنا يجمعنا في بيت واحد على خير ويديمك نعمة في حياتي طول العمر🫂❤️ يارب السنه دي تبقي احسن من سنين كتير فاتت ونحقق كل ال عايزنو سوا يحبيبي❤️❤️❤️ بحبك❣️",
@@ -155,7 +155,11 @@ if (next === CONFIG.password) {
 
   return (
     <main className="experience">
-      <audio ref={audioRef} src="/song.mp3" preload="auto" />
+      <audio
+  ref={audioRef}
+  src={`${import.meta.env.BASE_URL}song.mp3`}
+  preload="auto"
+/>
       <FloatingHearts />
 
       <div className="ambient ambient-a" />
@@ -283,7 +287,7 @@ if (next === CONFIG.password) {
                           transition={{ duration: 2, repeat: Infinity }}
                         >
                           <img
-                            src="\public\photo1.jpg"
+                            src={`${import.meta.env.BASE_URL}photo1.jpg`}
                             alt="Caller portrait"
                           />
                           <span className="avatar-heart">♥</span>
